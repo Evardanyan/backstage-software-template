@@ -6,10 +6,12 @@ on:
       - src/**
     branches:
       - master
+      - main
 
 jobs:
   ci:
-    runs-on: ubuntu-latest
+    #runs-on: ubuntu-latest
+    runs-on: self-hosted
     steps:
 
       - name: Shorten commit id
